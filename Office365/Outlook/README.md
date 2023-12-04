@@ -14,7 +14,7 @@ This script is designed to generate .csv file with shared mailbox permission rep
 
 To execute the script with MFA enabled account or non-MFA account, use the below format from the powershell windows with administrative privileges. Administrative privileges are needed only during first run to install the dependencies. 
 
-```powershel
+```l
 ./GetSharedMailboxPermissions.ps1
 ```
 
@@ -26,13 +26,13 @@ Additional information and use cases can be found here: https://o365reports.com/
 
 ## Known issues
 
-Sometines script sign error can occur preventing form executing unsigned scripts. 
+Sometimes script sign error can occur preventing form executing unsigned scripts. 
 
 ![image](https://github.com/ambersearch/Tools/assets/44996098/e9dcd605-205d-496a-b6ae-8dab1f10be3f)
 
-To solve thus issue you can temporary or permanently chnge curent security policy.
+To solve this issue you can temporary or permanently change current security policy.
 
-To check current policy foollwing command can be used in PowerShel **with administartive rights**. 
+To check current policy following command can be used in PowerShell **with administrative rights**. 
 
 ```powershell
 Get-ExecutionPolicy -List
