@@ -28,7 +28,8 @@ Additional information and use cases can be found here: https://o365reports.com/
 
 Sometimes script sign error can occur preventing form executing unsigned scripts. 
 
-![image](https://github.com/ambersearch/Tools/assets/44996098/e9dcd605-205d-496a-b6ae-8dab1f10be3f)
+<img src="https://github.com/ambersearch/Tools/assets/44996098/e9dcd605-205d-496a-b6ae-8dab1f10be3f" height="100px" />
+
 
 To solve this issue you can temporary or permanently change current security policy.
 
@@ -39,7 +40,7 @@ Get-ExecutionPolicy -List
 ```
 
 You will see something like this:
-![image](https://github.com/ambersearch/Tools/assets/44996098/226894eb-9a33-4390-a138-b42c35406374)
+<img src="https://github.com/ambersearch/Tools/assets/44996098/226894eb-9a33-4390-a138-b42c35406374" height="200px" />
 
 To change current execution policy:
 
