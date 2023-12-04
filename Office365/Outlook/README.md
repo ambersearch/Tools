@@ -23,3 +23,28 @@ After script startup login page will appear. Please login with outlook administr
 ## Additional information:
 
 Additional information and use cases can be found here: https://o365reports.com/2020/01/03/shared-mailbox-permission-report-to-csv/
+
+## Known issues
+
+Sometines script sign error can occur preventing form executing unsigned scripts. 
+
+![image](https://github.com/ambersearch/Tools/assets/44996098/e9dcd605-205d-496a-b6ae-8dab1f10be3f)
+
+To solve thus issue you can temporary or permanently chnge curent security policy.
+
+To check current policy foollwing command can be used in PowerShel **with administartive rights**. 
+
+```powershell
+Get-ExecutionPolicy -List
+```
+
+You will see something like this:
+![image](https://github.com/ambersearch/Tools/assets/44996098/226894eb-9a33-4390-a138-b42c35406374)
+
+To change current execution policy:
+
+```powershell
+Set-ExecutionPolicy -Scope  LocalMachine -ExecutionPolicy bypass
+```
+
+More info: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4
